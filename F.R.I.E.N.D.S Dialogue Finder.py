@@ -33,7 +33,7 @@ def checkpath():
 # Accepting the dialouge and performing a search in all the log files.
 def finddialogue():
     flag=0
-    dialogue=input("Enter The Dialouge!!!\n").lower()
+    dialogue=input("Enter The Dialogue!!!\n").lower()
     for item in glob.glob("*.log"):
         try:
             file=open(item,"r",encoding="utf8")
@@ -49,6 +49,7 @@ def finddialogue():
             print(e)
     if flag==0:
         print("Are you sure it's a F.R.I.E.N.D.S dialouge?")
+	finddialogue()
 
 # Downloading all the log files.
 def downloadalllogs():
