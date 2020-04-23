@@ -6,4 +6,5 @@ The steganographic operation is done using the copy command (Windows) and the fi
 It is important to note that for this program to work you will need to have the files in the same folder as the program and also that you provide the file names with correct extensions.
 
 
+
 To run the program - python menusteg.py
