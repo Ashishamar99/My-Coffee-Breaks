@@ -8,3 +8,5 @@ It is important to note that for this program to work you will need to have the 
 
 
 To run the program - python menusteg.py
+
+Note - To open the hidden compressed file, open the final image file with a compression software such as winzip/winrar/peazip/7zip and extract it to a specified location.
