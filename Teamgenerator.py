@@ -47,3 +47,4 @@ while True:
         print("Error")
         break
 print(f"Final teams are: {final_teams}")
+input("Exit")
