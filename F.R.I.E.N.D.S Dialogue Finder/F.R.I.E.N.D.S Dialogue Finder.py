@@ -33,7 +33,7 @@ def checkpath():
 # Accepting the dialouge and performing a search in all the log files.
 def finddialogue():
     flag=0
-    dialogue=input("Enter The Dialogue!!!\t --- ").lower()
+    dialogue=input("Enter The Dialogue!!!\t -->  ").lower()
     for item in glob.glob("*.log"):
         try:
             file=open(item,"r",encoding="utf8")
@@ -42,14 +42,14 @@ def finddialogue():
             for line in file:
                 if dialogue in line:
                     flag=1
-                    print(f"\"{line}\", will appear in \"{titleepisode}\" which is in Season = {item[:2]}, Episode = {item[2:4]}")
+                    print(f"\n\"{line}\", will appear in \"{titleepisode}\" which is in Season = {item[:2]}, Episode = {item[2:4]}")
                 else:
                     pass
         except Exception as e:
             print(e)
     if flag==0:
         print("Are you sure it's a F.R.I.E.N.D.S dialouge?")
-	finddialogue()
+        finddialogue()
 
 # Downloading all the log files.
 def downloadalllogs():
